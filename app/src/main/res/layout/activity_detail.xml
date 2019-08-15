@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/img_item_photo_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/image_campus"
+            android:scaleType="fitXY"/>
+
+    <LinearLayout
+            android:id="@+id/linear_image_logo_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_item_logo_detail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_background"
+                android:padding="8dp"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_item_name_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_image_logo_detail"
+            android:layout_margin="@dimen/activity_default_margin_half"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_14"
+            android:textStyle="bold"
+            tools:text="@string/campus_name"/>
+
+    <LinearLayout
+            android:id="@+id/linear_contact_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_name_detail"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+        <ImageView
+                android:id="@+id/btn_website_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_website"
+                tools:ignore="ButtonStyle"/>
+
+        <ImageView
+                android:id="@+id/btn_phone_detail"
+                android:src="@drawable/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_contact"/>
+
+        <ImageView
+                android:id="@+id/btn_email_detail"
+                android:src="@drawable/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_email"
+                tools:ignore="ButtonStyle"/>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_item_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_contact_detail"
+            android:layout_margin="@dimen/activity_default_margin_half"
+            android:text="@string/text_overview"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_14"
+            android:textStyle="bold"
+            tools:text="@string/text_title"/>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_title_detail"
+            android:layout_margin="@dimen/activity_default_margin_half">
+
+        <TextView
+                android:id="@+id/tv_item_overview_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_default_margin_half"
+                android:justificationMode="inter_word"
+                android:textSize="@dimen/size_14"
+                tools:targetApi="o"
+                tools:text="@string/text_overview"/>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_item_photo_detail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/image_campus"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/linear_image_logo_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_logo_detail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_background"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_name_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_image_logo_detail"
+        android:layout_margin="@dimen/activity_default_margin_half"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size_16"
+        android:textStyle="bold"
+        tools:text="@string/campus_name" />
+
+    <LinearLayout
+        android:id="@+id/linear_contact_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_name_detail"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+                android:id="@+id/btn_website_detail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="@string/text_website"
+                android:layout_margin="@dimen/activity_default_margin_half"
+                android:src="@drawable/web"
+                tools:ignore="ButtonStyle"
+                android:contentDescription="@string/description"/>
+
+        <ImageView
+                android:id="@+id/btn_phone_detail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/activity_default_margin_half"
+                android:src="@drawable/phone"
+                android:text="@string/text_contact"
+                android:contentDescription="@string/description"/>
+
+        <ImageView
+                android:id="@+id/btn_email_detail"
+                android:src="@drawable/email"
+                android:layout_margin="@dimen/activity_default_margin_half"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="@string/text_email"
+                android:contentDescription="@string/description"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_title_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_contact_detail"
+        android:layout_marginStart="@dimen/activity_default_margin_half"
+        android:text="@string/text_overview"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_16"
+        android:gravity="center"
+        tools:text="@string/text_title" />
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/tv_item_title_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_default_margin_half">
+
+    <TextView
+        android:id="@+id/tv_item_overview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_default_margin_half"
+        android:textSize="@dimen/size_14"
+        android:justificationMode="inter_word"
+        tools:text="@string/text_overview" />
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView
+>

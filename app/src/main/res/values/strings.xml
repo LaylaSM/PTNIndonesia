@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PTN Indonesia</string>
+    <string name="campus_name">Nama Kampus</string>
+    <string name="city_name">Nama Kota</string>
+    <string name="description">Deskripsi</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="image_campus">Image Campus</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="with_cardview">Cardview</string>
+    <string name="text_website">Situs</string>
+    <string name="text_contact">No Telp</string>
+    <string name="text_overview">Ikhtisar</string>
+    <string name="text_title">Ikhtisar</string>
+    <string name="text_email">Email</string>
+    <string name="text_not_available">Maaf, email tidak tersedia</string>
+    <string name="text_author">Layla SM</string>
+    <string name="text_my_email">laysitmar@gmail.com</string>
+</resources>
